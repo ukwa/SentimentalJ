@@ -14,7 +14,7 @@
       <name>The British Library</name>
       <url>http://www.bl.uk/</url>
    </organization>
-   <inceptionYear>2012</inceptionYear>
+   <inceptionYear>2013</inceptionYear>
    <licenses>
      <license>
        <name>The MIT License</name>
@@ -102,4 +102,5 @@
          <scope>compile</scope>
       </dependency>
    </dependencies>
+   <description>Sentiment analysis, based on the Sentimental node.js library. Approach based on the AFINN word lists.</description>
 </project>
