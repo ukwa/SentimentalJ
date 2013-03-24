@@ -8,7 +8,7 @@
    <groupId>uk.bl.wa.sentimentalj</groupId>
    <artifactId>sentimentalj</artifactId>
    <name>SentimentalJ</name>
-   <version>1.0.0</version>
+   <version>1.0.1-SNAPSHOT</version>
    <organization>
       <name>The British Library</name>
       <url>http://www.bl.uk/</url>
