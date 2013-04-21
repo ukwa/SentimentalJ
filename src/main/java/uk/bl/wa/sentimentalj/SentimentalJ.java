@@ -54,7 +54,7 @@ public class SentimentalJ {
 		words = new ArrayList<String>();
 		adjectives = new ArrayList<String>();
 
-		String noPunctuation = phrase.replaceAll("[^a-zA-Z ]+", "").replaceAll(" {2,}"," ");
+		String noPunctuation = phrase.replaceAll("[^a-zA-Z ]+", " ").replaceAll(" {2,}"," ");
 		tokens = noPunctuation.toLowerCase().split(" ");		 
 	}
 

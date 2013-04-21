@@ -41,10 +41,15 @@ public class Sentiment {
 	private double comparative;
 	private List<String> words;
 	private List<String> adjectives;
+	private Sentiment positive, negative;
 
 	public Sentiment(int hits, int length, List<String> words2, List<String> adjectives2 ) {
 		this.score = hits;
-		this.comparative = hits / length;
+		if( length != 0.0 ) {
+			this.comparative = (double) hits / (double) length;
+		} else {
+			this.comparative = 0.0;
+		}
 		this.words       = words2;
 		this.adjectives  = adjectives2;
 	}
@@ -52,6 +57,8 @@ public class Sentiment {
 	public Sentiment(int hits, double d, Sentiment pos, Sentiment neg) {
 		this.score = hits;
 		this.comparative = d;
+		this.positive = pos;
+		this.negative = neg;
 	}
 
 	/**
@@ -81,6 +88,20 @@ public class Sentiment {
 	 */
 	public List<String> getAdjectives() {
 		return adjectives;
+	}
+
+	/**
+	 * @return the positive
+	 */
+	public Sentiment getPositive() {
+		return positive;
+	}
+
+	/**
+	 * @return the negative
+	 */
+	public Sentiment getNegative() {
+		return negative;
 	}
 
 }
