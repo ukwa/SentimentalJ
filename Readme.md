@@ -2,7 +2,7 @@
 
 [![Build Status](https://secure.travis-ci.org/ukwa/SentimentalJ.png)](http://travis-ci.org/ukwa/SentimentalJ)
 
-This is a fork of the original JavaScript version. The [core algorithm](https://github.com/ukwa/SentimentalJ/blob/master/src/main/java/uk/bl/wa/sentimentalj/SentimentalJ.java) has been converted, along with the [tests](https://github.com/ukwa/SentimentalJ/blob/master/src/test/java/uk/bl/wa/sentimentalj/SentimentalJTest.java), and therefore this project should be an accurate transliteration of the original codebase.
+This is a fork of the original JavaScript version. The [core algorithm](https://github.com/ukwa/SentimentalJ/blob/master/src/main/java/uk/bl/wa/sentimentalj/SentimentalJ.java) has been converted, along with the [tests](https://github.com/ukwa/SentimentalJ/blob/master/src/test/java/uk/bl/wa/sentimentalj/SentimentalJTest.java), and therefore this project should be an accurate transliteration of the original codebase. There are some outstanding [issues](https://github.com/ukwa/SentimentalJ/issues), but these focus on general issues (like thread-safety), not the core algorithm.
 
 Note, however, this does not necessarily imply that either are an accurate implementation of the AFINN-111 scheme, or that this simple approach will accurately rate the sentiment for your content.
 
