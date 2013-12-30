@@ -1,9 +1,26 @@
+# SentimentalJ - A port of Sentimental to Java
+
 [![Build Status](https://secure.travis-ci.org/ukwa/SentimentalJ.png)](http://travis-ci.org/ukwa/SentimentalJ)
+
+This is a fork of the original JavaScript version. The [core algorithm](https://github.com/ukwa/SentimentalJ/blob/master/src/main/java/uk/bl/wa/sentimentalj/SentimentalJ.java) has been converted, along with the [tests](https://github.com/ukwa/SentimentalJ/blob/master/src/test/java/uk/bl/wa/sentimentalj/SentimentalJTest.java), and therefore this project should be an accurate transliteration of the original codebase.
+
+Note, however, this does not necessarily imply that either are an accurate implementation of the AFINN-111 scheme, or that this simple approach will accurately rate the sentiment for your content.
+
+Releases of this codebase have been published to Maven central, and so can be used via the following POM declaration:
+
+      ...
+      <dependency>
+         <groupId>uk.bl.wa.sentimentalj</groupId>
+         <artifactId>sentimentalj</artifactId>
+         <version>1.0.2</version>
+      </dependency
+      ...
+
+----
+
 # SentiMental - Putting the Mental in Sentimental
       
   Sentiment analysis tool for node.js based on the [AFINN-111 wordlist](http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=6010).
-  
-  Attempting port to Java....
   
 ## Install
     $ npm install Sentimental
